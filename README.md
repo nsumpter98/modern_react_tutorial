@@ -12,7 +12,7 @@ npm run start
 ## Run json test API
 ### In a new terminal from project root directory
 ```angular2html
-npm run json-server
+npx json-server --watch data/db.json --port 8000
 ```
 This will run the json server on port 8000
 
