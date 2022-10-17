@@ -50,3 +50,41 @@
     color: #4a63e3;
     margin-bottom: 8px;
 }
+
+.blog-preview a{
+    text-decoration: none;
+}
+
+
+
+/*modern create form style*/
+.form{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}
+
+.form h2{
+    font-size: 20px;
+    color: #4a63e3;
+    margin-bottom: 8px;
+}
+
+.form input{
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}
+
+.form textarea{
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}
+
