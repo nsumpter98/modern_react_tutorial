@@ -6,7 +6,7 @@ const Create = () => {
     //const {body, author, isPending } = useFetch('http://localhost:8000/blogs');
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
-    const [author, setAuthor] = useState('mario');
+    const [author, setAuthor] = useState('');
     const [isPending, setIsPending] = useState(false);
 
     const history = useHistory();
@@ -49,13 +49,12 @@ const Create = () => {
                     onChange={(e) => setBody(e.target.value)}
                 ></textarea>
                 <label>Blog author:</label>
-                <select
+                <input
+                    type="text"
+                    required
                     value={author}
                     onChange={(e) => setAuthor(e.target.value)}
-                >
-                    <option value="mario">mario</option>
-                    <option value="yoshi">yoshi</option>
-                </select>
+                />
                 {!isPending && <button>Add Blog</button>}
                 {isPending && <button disabled>Adding blog...</button>}
                 {/*{isPending && <button disabled>Adding Blog...</button>}*/}
