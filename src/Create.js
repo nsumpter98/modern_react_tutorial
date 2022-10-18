@@ -1,6 +1,8 @@
 import useFetch from "./useFetch";
 import {useState} from "react";
-import { useNavigate as useHistory } from "react-router-dom";
+
+import { IonButton } from '@ionic/react';
+
 
 const Create = () => {
     //const {body, author, isPending } = useFetch('http://localhost:8000/blogs');
@@ -9,7 +11,6 @@ const Create = () => {
     const [author, setAuthor] = useState('');
     const [isPending, setIsPending] = useState(false);
 
-    const history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -24,7 +25,6 @@ const Create = () => {
         }).then(() => {
             console.log('new blog added');
             setIsPending(false);
-            history('/');
         }).catch((err) => {
             console.log(err);
         });
@@ -55,8 +55,8 @@ const Create = () => {
                     value={author}
                     onChange={(e) => setAuthor(e.target.value)}
                 />
-                {!isPending && <button>Add Blog</button>}
-                {isPending && <button disabled>Adding blog...</button>}
+                {!isPending && <IonButton color={'primary'} fill="clear">Add Blog</IonButton>}
+                {isPending && <IonButton disabled>Adding blog...</IonButton>}
                 {/*{isPending && <button disabled>Adding Blog...</button>}*/}
             </form>
         </div>
