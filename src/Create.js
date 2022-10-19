@@ -35,21 +35,22 @@ const Create = () => {
         <div className="create">
             <h2>Add a New Blog</h2>
             <form onSubmit={handleSubmit}>
-                <label>Blog title:</label>
+                <label className={'dark:text-white'}>Blog title:</label>
                 <input
                     type="text"
                     required
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                 />
-                <label>Blog body:</label>
+                <label className={'dark:text-white'}>Blog body:</label>
                 <textarea
                     required
                     value={body}
                     onChange={(e) => setBody(e.target.value)}
                 ></textarea>
-                <label>Blog author:</label>
+                <label className={'dark:text-white'}>Blog author:</label>
                 <input
+                    className={'dark:backdrop-blur-2xl'}
                     type="text"
                     required
                     value={author}

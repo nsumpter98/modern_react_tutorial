@@ -12,7 +12,7 @@ function App() {
     <Router>
         <div className="App">
             <Navbar />
-          <div className="content">
+          <div className="content bg-gray-400">
               <Switch>
                   <Route exact path='/' element={<Home/>} />
                   <Route exact path='/create' element={<Create/>} />
