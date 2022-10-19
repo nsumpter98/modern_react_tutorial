@@ -8,6 +8,7 @@ const BlogList = ({ blogs, title/*, handleDelete*/ }) => {
 
     return (
         <div className="blog-list">
+            console.log(process.env.REACT_APP_API_KEY);
             <h2 className={'dark:text-white'}>{ title }</h2>
             {blogs.map((blog) => (
                 /*<div className="blog-preview" key={blog.id}>

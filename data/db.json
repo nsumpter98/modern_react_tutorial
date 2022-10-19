@@ -21,6 +21,24 @@
       "body": "this is the post body. yeet!!!",
       "author": "Nathanael Sumpter",
       "id": 5
+    },
+    {
+      "title": "Moms chickens",
+      "body": "eating grain",
+      "author": "mom",
+      "id": 6
+    },
+    {
+      "title": "Nathans bread",
+      "body": "super soggy",
+      "author": "nathan",
+      "id": 7
+    },
+    {
+      "title": "Sara's post",
+      "body": "sara eats mac and cheese",
+      "author": "Sara",
+      "id": 8
     }
   ]
 }
